@@ -1,0 +1,44 @@
+.titularAvances h3 {
+    display: flex;
+    font-size: 4vw;
+    /*font-family: Comic Sans MS;*/
+    justify-content: center;
+    padding: 10px; /*Notas Vanesa: Le saqué el estilo de letra Comic Sans porque no lo veía en armonía con el resto del contenido. También le agregué padding al titular*/
+}
+
+.avances {
+    width: 100%;
+    height: 150px;
+    overflow: hidden;
+}
+
+.avances ul {
+    display: flex;
+    width: 400%;
+
+    animation: cambio 20s infinite alternate linear;
+}
+
+.avances li {
+    list-style: none;
+    width: 100%;
+}
+
+.avances img {
+    width: 100%;
+    height: 100%;
+}
+
+@keyframes cambio {
+    0% {margin-left: 0;}
+    20% {margin-left: 0;}
+
+    25% {margin-left: -100%;}
+    45% {margin-left: -100%;}
+
+    50% {margin-left: -200%;}
+    70% {margin-left: -200%;}
+
+    75% {margin-left: -300%;}
+    100% {margin-left: -300%;}
+}
